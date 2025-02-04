@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Code Compiler</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- PrismJS CSS for syntax highlighting -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-coy.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Courier New", monospace;
+        background-color: #121212;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+      }
+      h1 {
+        color: #61dafb;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .container {
+        background-color: #1e1e1e;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+      }
+      pre {
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #2d2d2d;
+        color: #ffffff;
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+      }
+      /* Default font size */
+      pre code {
+        font-size: 16px;
+      }
+
+      /* Adjust font size for different screen sizes */
+      @media (max-width: 1200px) {
+        pre code {
+          font-size: 14px; /* Decrease font size for medium screens */
+        }
+      }
+      @media (max-width: 992px) {
+        pre code {
+          font-size: 12px; /* Decrease font size for tablets */
+        }
+      }
+      @media (max-width: 768px) {
+        pre code {
+          font-size: 11px; /* Decrease font size for mobile */
+        }
+      }
+      @media (max-width: 576px) {
+        pre code {
+          font-size: 10px; /* Smallest font size for very small screens */
+        }
+      }
+
+      .output {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #252526;
+        border: 1px solid #3e3e3e;
+        white-space: pre-wrap;
+        border-radius: 5px;
+        text-align: left;
+        color: #ffffff;
+        font-family: "Courier New", monospace;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Java Code Compiler</h1>
+
+      <!-- Bootstrap Grid for Code Blocks -->
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Program4</h4>
+          <pre><code class="language-java">
+class Program4 {
+    public static void main(String[] args) {
+        System.out.println("This is main method of Program4");
+        Program3.demo();
+        System.out.println("====================");
+        Program1 p = new Program1();
+        p.drive();
+        System.out.println("main method of Program4 Ends");
+    }
+}
+    </code></pre>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Program3</h4>
+          <pre><code class="language-java">
+class Program3 {
+    public static void demo() {
+        System.out.println("This is demo method");
+    }
+}
+                </code></pre>
+        </div>
+      </div>
+
+      <h4>Output</h4>
+      <div class="output">
+        This is main method This is demo method This is test method test method
+        Ends!! demo method Ends!! main method Ends
+      </div>
+    </div>
+
+    <!-- PrismJS for Syntax Highlighting -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
+  </body>
+</html>

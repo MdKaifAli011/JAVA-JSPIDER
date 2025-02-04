@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Code Compiler</title>
+    
+    <!-- Include Bootstrap CSS for styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Include PrismJS CSS for syntax highlighting (using the 'prism-coy' theme) -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-coy.min.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #61dafb;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        pre {
+            width: 100%;
+            height: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #2d2d2d;
+            color: #ffffff;
+            text-align: left;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #252526;
+            border: 1px solid #3e3e3e;
+            white-space: pre-wrap; /* Makes the text wrap naturally */
+            height: auto; /* Adjust height to fit content */
+            width: 100%;
+            border-radius: 5px;
+            text-align: left;
+            display: inline-block;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+
+    <div class="container">
+        <h1>Program1</h1>
+
+        <!-- Using <pre> and <code> blocks for code preview -->
+        <pre><code class="language-java">
+class Program1{
+     public static void main(String[] args)
+        {
+              System.out.println(Math.E);
+              System.out.println(Math.PI);
+              System.out.println(Math.cos(23));
+              System.out.println(Math.sqrt(145));
+              System.out.println(Math.cbrt(28));
+              System.out.println(Math.ceil(23.7));
+              System.out.println(Math.floor(23.7));
+              System.out.println(Math.pow(12,3));
+              System.out.println(Math.round(23.4));
+              System.out.println(Math.abs(23-30));
+              System.out.println(Math.min(23,30));
+              System.out.println(Math.max(23,30));
+		}
+}
+            
+        </code></pre>
+
+        <h4>output</h4>
+        <div class="output" id="output">
+            2.718281828459045
+            3.141592653589793
+            -0.5328330203333975
+            12.041594578792296
+            3.0365889718756627
+            24.0
+            23.0
+            1728.0
+            23
+            7
+            23
+            30
+            </div>
+    </div>
+
+    </div>
+
+    <!-- Include PrismJS JS for syntax highlighting -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <!-- Include additional PrismJS components (for Java language) -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
+
+    <!-- Include Bootstrap JS (optional for more functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

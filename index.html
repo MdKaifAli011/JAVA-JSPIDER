@@ -9,13 +9,27 @@
       rel="stylesheet"
     />
     <style>
+     body {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+      .accordion-button {
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #333;
+        color: #fff;
+      }
+      .accordion-body {
+        background-color: #1e1e1e;
+      }
       a {
+        color: #bb86fc;
         text-decoration: none;
       }
-
-      .folder {
-        font-weight: bold;
-        cursor: pointer;
+      a:hover {
+        color: #ff79c6;
       }
       .file {
         margin-left: 20px;
@@ -168,23 +182,86 @@
               </div>
 
               <!-- Other Folders -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#method"
-                  >
-                    📁 Method
-                  </button>
-                </h2>
-                <div id="method" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                    
-                  </div>
-                </div>
+              <!-- Method Folder -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button
+      class="accordion-button collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#method"
+    >
+      📁 Method
+    </button>
+  </h2>
+  <div id="method" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <!-- Subfolder inside Method -->
+      <div class="accordion" id="methodSubFolders">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#inbuilt-methods"
+            >
+              📁 inbuilt methods
+            </button>
+          </h2>
+          <div id="inbuilt-methods" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <!-- Files inside inbuilt methods -->
+              <div class="file">
+                <a href="./Preview java file/html file/Method/inbuilt methods/Program1.html">📄 Program1.java</a>
               </div>
+              <div class="file">
+                <a href="./Preview java file/html file/method/inbuilt methods/Program2.html">📄 Program2.java</a>
+              </div>
+              <div class="file">
+                <a href="./Preview java file/html file/method/inbuilt methods/Program3.html">📄 Program3.java</a>
+              </div>
+              <div class="file">
+                <a href="./Preview java file/html file/method/inbuilt methods/Program4.html">📄 Program4.java</a>
+              </div>
+              <div class="file">
+                <a href="./Preview java file/html file/method/inbuilt methods/Program5.html">📄 Program5.java</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#no-argument-method"
+            >
+              📁 no argument method
+            </button>
+          </h2>
+          <div id="no-argument-method" class="accordion-collapse collapse">
+            <div class="accordion-body">
+               <!-- Files inside no-argument-methods -->
+              <div class="file">
+                <a href="./Preview java file/html file/method/no argument method/Program1.html">📄 Program1.java</a>
+              </div>
+              <div class="file">
+                <a href="./Preview java file/html file/method/no argument method/Program2.html">📄 Program2.java</a>
+              </div>
+              <div class="file">
+                <a href="./Preview java file/html file/method/no argument method/Program3.html">📄 Program3.java</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Subfolder -->
+    </div>
+  </div>
+</div>
 
               <div class="accordion-item">
                 <h2 class="accordion-header">
