@@ -67,35 +67,36 @@
 <body class="bg-dark">
 
     <div class="container">
-        <h1>Program4</h1>
+        <h1>Program1</h1>
 
         <!-- Using <pre> and <code> blocks for code preview -->
         <pre><code class="language-java">
-            // Source code is decompiled from a .class file using FernFlower decompiler.
-class Program4 {
-   Program4() {
-   }
 
-   public static void main(String[] var0) {
-      System.out.println("This is main method of Program4");
-      Program3.demo();
-      System.out.println("====================");
-      Program1 var1 = new Program1();
-      var1.drive();
-      System.out.println("main method of Program4 Ends");
-   }
-}
-
-                     </code></pre>
+            class Program1
+            {
+                public static void main(String[] args)
+                {
+                    int[] age={17, 18, 23, 34, 21, 28, 22};
+                    System.out.println(age);
+                    System.out.println(age.length);
+                    System.out.println(age[0]);
+                    System.out.println(age[3]);
+                    System.out.println(age[7]);
+                }
+            }
+            
+        </code></pre>
 
         <h4>output</h4>
         <div class="output" id="output">
-This is main method
-This is demo method
-This is test method
-test method Ends!!
-demo method Ends!!
-main method Ends
+            [I@2a139a55
+            7
+            17
+            34
+            Runtime Error
+            Error
+            Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+                at Program1.main(Main.java:10)
             </div>
     </div>
 
